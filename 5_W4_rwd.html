@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>響應式網頁</title>
+      <style type="text/css">
+      * { 
+            margin: 0;
+            padding: 0;
+            list-style: none;
+      }
+      .header {
+        text-align: right;
+      }
+      .wrap h1,
+      .wrap p,
+      .item .pic,
+      .item .text h2,
+      .href,
+      .footer {
+        text-align: center; 
+       }
+      .header nav {
+        background-color: #F0F0F0;
+      }
+      .header nav a {
+        text-decoration: none;
+        color: #1B263B;
+      }
+      .header nav a:hover{
+        background-color: #4EA8DE;
+        color: #F0F0F0;
+      }
+      .banner img {
+        width: 100%;
+        vertical-align: bottom;
+      }
+      .path {
+        display: none;
+        padding: 8px 12px;
+        font-size: 14px;
+        gap: 4px;
+      }
+      .wrap {
+        background-color: #F0F0F0;
+        color: #1B263B;
+        padding: 12px 8px;
+      }
+      .item .pic {
+        width: 100%;
+        padding: 12px 0px 0px;
+      }
+      .item .text {
+        padding: 6px 8px;
+      }
+      h1 {
+        color: #1B263B;
+        text-align: center;
+      }
+      h2 {
+        color: #1B5F8A;;
+      }
+      .href {
+        padding: 12px 0px 12px 0px;
+      } 
+      .href a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 16px; 
+        background-color: #1B263B;
+        color: #fff;
+        border-radius: 4px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+      .href a:hover {
+        background-color: #4EA8DE;
+      }
+      .footer {
+        background-color: #DADADA;
+        color: #1B263B;
+        padding: 3px 0px;
+      }
+      @media screen and (min-width:768px) {
+        .header nav a{
+            font-size: 16px;
+            display: inline-block;
+            line-height: 52px;
+            padding: 0 10px;
+        }
+        .path {
+            display: flex;
+        }
+        .path a:hover {
+            text-decoration: underline;
+            color: #4EA8DE;
+        }
+        .box {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        p {
+          line-height: 1.6; 
+        }
+        .item {
+            flex: 1;
+            max-width: 400px;
+            border: 0.5px solid #1B263B;
+        }
+        .path a {
+            text-decoration: none;
+            color: #1B263B;
+        }
+        .int {
+            text-align: center; 
+        }
+      }
+      </style>
+</head>
+<body>
+
+    <div class="header" id="000">
+        <nav>
+            <a href="#aaa">個人介紹</a>
+            <a href="#bbb">作品連結</a>
+        </nav>
+    </div>
+
+    <div class="banner">
+        <img src ="https://picsum.photos/1200/300/?random=21" alt="個人介紹示意圖">
+    </div>
+
+    <ul class="path">
+        <li><a href="#000">首頁 / </a></li>
+        <li><a href="#aaa">個人介紹 /</a></li>
+        <li><a href="#bbb">作品連結</a></li>
+    </ul>
+
+    <div class="int">
+        <div class="wrap" id="aaa">
+            <h1>個人介紹</h1>
+            <p>
+            一直豐富我不新手組圖共享最初就有看到都能忽然損失，重視大家。
+            </p>
+        </div>
+        <div class="box">
+        <div class="item">
+        <div class="pic">
+            <img src ="https://picsum.photos/300/200/?random=11" alt="經歷">
+        </div>
+        <div class="text">
+            <h2>經歷</h2>
+            <p>
+            貫徹計算機權利新竹課程數碼商業一絲死亡一切笑着這麼多，公告把你飯店故意體會生活接觸休息發生大家都西。
+            </p>
+        </div>
+        </div>
+        <div class="item">
+        <div class="pic">
+            <img src ="https://picsum.photos/300/200/?random=12" alt="技能">
+        </div>
+        <div class="text">
+            <h2>技能</h2>
+            <p>
+            由於情形有些沒人用來出處地址全球會有股東，告訴獨立動物，整。
+            </p>
+        </div>
+        </div>
+        </div>
+    </div>
+
+        <div class="wrap" id="bbb">
+            <h1>作品連結</h1>
+            <p>
+            電腦及其資本教師共享今後發表，上述商家這種功能程式，房屋詢。
+            </p>
+        </div>
+        <div class="href">
+            <a href="#">點我看更多</a>
+        </div>
+
+        <div class="footer">
+            &copy; copyright 2025 by xuan
+        </div>
+
+</body>
+</html>
